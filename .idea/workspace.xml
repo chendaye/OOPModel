@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f6b5e09-7d19-4464-8cb2-7198b217507a" name="默认的" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SectionOne/FinalClass.php" afterPath="$PROJECT_DIR$/SectionOne/FinalClass.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SectionOne/MagicClass.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ClassModel.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -23,11 +24,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="FinalClass.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="FinalClass.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SectionOne/FinalClass.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="275">
               <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MagicClass.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SectionOne/MagicClass.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="371">
+              <caret line="61" column="20" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -47,6 +58,7 @@
         <option value="$PROJECT_DIR$/StaticClass.php" />
         <option value="$PROJECT_DIR$/ErrorDealClass.php" />
         <option value="$PROJECT_DIR$/SectionOne/FinalClass.php" />
+        <option value="$PROJECT_DIR$/SectionOne/MagicClass.php" />
       </list>
     </option>
   </component>
@@ -187,12 +199,12 @@
       <option name="presentableId" value="Default" />
       <updated>1480837942810</updated>
       <workItem from="1480837951655" duration="20196000" />
-      <workItem from="1480942960249" duration="606000" />
+      <workItem from="1480942960249" duration="7778000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20802000" />
+    <option name="totallyTimeSpent" value="27974000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
@@ -317,6 +329,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="275">
           <caret line="11" column="29" selection-start-line="11" selection-start-column="29" selection-end-line="11" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SectionOne/MagicClass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="61" column="20" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="20" />
           <folding />
         </state>
       </provider>

@@ -11,6 +11,9 @@
      * 前导反斜杠表示在跟空间下面去找
      *
      * 在用use 来引入命名空间是  不用再最前面加前导反斜杠 是因为  use  默认是在跟空间下面去查找
+     *
+     * 在一个文件中设置多个命名空间，可以用大括号，但是不推荐
+     * 另外，不能再一个文件中同时用  大括号命名空间语法和行命名空间语法
      */
     namespace chen\chen{
         class chen{
@@ -27,5 +30,7 @@
         use chen\chen\chen;
         use daye\daye\daye;
         $ret = new daye();
+        //TODO:输出当前命名空间,魔术常量
+        echo __NAMESPACE__;
     }
 ?>

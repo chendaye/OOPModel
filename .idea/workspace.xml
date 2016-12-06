@@ -2,17 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f6b5e09-7d19-4464-8cb2-7198b217507a" name="默认的" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SectionTool/NameSpaceClass.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SectionTool/MsgClass.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/SectionOne/AbstractInterfaceClass.php" afterPath="$PROJECT_DIR$/SectionBasic/AbstractInterfaceClass.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/SectionOne/BaseClass.php" afterPath="$PROJECT_DIR$/SectionBasic/BaseClass.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/SectionOne/CloneClass.php" afterPath="$PROJECT_DIR$/SectionBasic/CloneClass.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/SectionOne/DestructClass.php" afterPath="$PROJECT_DIR$/SectionBasic/DestructClass.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/SectionOne/ErrorDealClass.php" afterPath="$PROJECT_DIR$/SectionBasic/ErrorDealClass.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/SectionOne/FinalClass.php" afterPath="$PROJECT_DIR$/SectionBasic/FinalClass.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/SectionOne/MagicClass.php" afterPath="$PROJECT_DIR$/SectionBasic/MagicClass.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/SectionOne/StaticClass.php" afterPath="$PROJECT_DIR$/SectionBasic/StaticClass.php" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/SectionOne/StaticConstClass.php" afterPath="$PROJECT_DIR$/SectionBasic/StaticConstClass.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SectionTool/NameSpaceClass.php" afterPath="$PROJECT_DIR$/SectionTool/NameSpaceClass.php" />
     </list>
     <ignored path="ClassModel.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -33,15 +25,24 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="NameSpaceClass.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="NameSpaceClass.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/SectionTool/NameSpaceClass.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+            <state relative-caret-position="146">
+              <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
               <folding>
-                <element signature="e#10#368#0#PHP" expanded="false" />
-                <element signature="e#598#617#0#PHP" expanded="true" />
+                <element signature="e#681#700#0#PHP" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MsgClass.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/SectionTool/MsgClass.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="446">
+              <caret line="69" column="37" selection-start-line="69" selection-start-column="37" selection-end-line="69" selection-end-column="37" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -64,6 +65,7 @@
         <option value="$PROJECT_DIR$/SectionOne/DestructClass.php" />
         <option value="$PROJECT_DIR$/SectionOne/CloneClass.php" />
         <option value="$PROJECT_DIR$/SectionTool/NameSpaceClass.php" />
+        <option value="$PROJECT_DIR$/SectionTool/MsgClass.php" />
       </list>
     </option>
   </component>
@@ -215,12 +217,12 @@
       <updated>1480837942810</updated>
       <workItem from="1480837951655" duration="20196000" />
       <workItem from="1480942960249" duration="11079000" />
-      <workItem from="1481030712035" duration="1886000" />
+      <workItem from="1481030712035" duration="6414000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33161000" />
+    <option name="totallyTimeSpent" value="37689000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
@@ -337,12 +339,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SectionTool/NameSpaceClass.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="24" column="21" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+        <state relative-caret-position="146">
+          <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
           <folding>
-            <element signature="e#10#368#0#PHP" expanded="true" />
-            <element signature="e#598#617#0#PHP" expanded="true" />
+            <element signature="e#681#700#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SectionTool/MsgClass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="446">
+          <caret line="69" column="37" selection-start-line="69" selection-start-column="37" selection-end-line="69" selection-end-column="37" />
+          <folding />
         </state>
       </provider>
     </entry>

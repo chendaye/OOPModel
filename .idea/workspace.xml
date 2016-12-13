@@ -2,9 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f6b5e09-7d19-4464-8cb2-7198b217507a" name="默认的" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SectionTool/ReflectionMsgClass.text" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/SectionTool/ReflectionUsingClass.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ObjectDesign/ModelPrincipleClass.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectDesign/DesignClass.php" afterPath="$PROJECT_DIR$/ObjectDesign/DesignClass.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectDesign/ModelClass.php" afterPath="$PROJECT_DIR$/ObjectDesign/ModelClass.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SectionTool/ReflectionMsgClass.text" afterPath="$PROJECT_DIR$/SectionTool/ReflectionMsgClass.text" />
     </list>
     <ignored path="ClassModel.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,56 +27,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="NameSpaceClass.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SectionTool/NameSpaceClass.php">
+      <file leaf-file-name="ModelClass.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ObjectDesign/ModelClass.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+            <state relative-caret-position="525">
+              <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ModelPrincipleClass.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ObjectDesign/ModelPrincipleClass.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="371">
+              <caret line="311" column="29" selection-start-line="311" selection-start-column="29" selection-end-line="311" selection-end-column="29" />
               <folding>
-                <element signature="e#681#700#0#PHP" expanded="true" />
+                <element signature="e#10#141#0#PHP" expanded="true" />
+                <element signature="e#6241#6261#0#PHP" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MsgClass.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SectionTool/MsgClass.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1725">
-              <caret line="69" column="37" selection-start-line="69" selection-start-column="37" selection-end-line="69" selection-end-column="37" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReflectionFunctionClass.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SectionTool/ReflectionFunctionClass.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4225">
-              <caret line="183" column="66" selection-start-line="183" selection-start-column="66" selection-end-line="183" selection-end-column="66" />
-              <folding>
-                <element signature="e#10#404#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReflectionUsingClass.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/SectionTool/ReflectionUsingClass.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="116" column="44" selection-start-line="116" selection-start-column="29" selection-end-line="116" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReflectionMsgClass.text" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/SectionTool/ReflectionMsgClass.text">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="555">
-              <caret line="273" column="5" selection-start-line="273" selection-start-column="5" selection-end-line="273" selection-end-column="5" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -102,6 +73,9 @@
         <option value="$PROJECT_DIR$/SectionTool/ReflectionUsingClass.php" />
         <option value="$PROJECT_DIR$/SectionTool/ReflectionMsgClass.php" />
         <option value="$PROJECT_DIR$/SectionTool/ReflectionMsgClass.text" />
+        <option value="$PROJECT_DIR$/ObjectDesign/DesignClass.php" />
+        <option value="$PROJECT_DIR$/ObjectDesign/ModelClass.php" />
+        <option value="$PROJECT_DIR$/ObjectDesign/ModelPrincipleClass.php" />
       </list>
     </option>
   </component>
@@ -149,6 +123,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -167,10 +142,6 @@
               <option name="myItemId" value="ClassModel" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SectionTool" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -181,10 +152,13 @@
               <option name="myItemId" value="ClassModel" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ObjectDesign" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -255,12 +229,16 @@
       <workItem from="1480942960249" duration="11079000" />
       <workItem from="1481030712035" duration="11093000" />
       <workItem from="1481116898904" duration="8332000" />
-      <workItem from="1481204039512" duration="10580000" />
+      <workItem from="1481204039512" duration="10647000" />
+      <workItem from="1481290558866" duration="7883000" />
+      <workItem from="1481446047163" duration="233000" />
+      <workItem from="1481550137234" duration="9710000" />
+      <workItem from="1481636083338" duration="5602000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="61280000" />
+    <option name="totallyTimeSpent" value="84775000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
@@ -303,21 +281,49 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/SectionTool/NameSpaceClass.php">
+    <entry file="file://$PROJECT_DIR$/ObjectDesign/ModelClass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ObjectDesign/ModelPrincipleClass.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#681#700#0#PHP" expanded="true" />
+            <element signature="e#10#141#0#PHP" expanded="true" />
+            <element signature="e#6241#6261#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SectionTool/MsgClass.php">
+    <entry file="file://$PROJECT_DIR$/ObjectDesign/ModelClass.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1725">
-          <caret line="69" column="37" selection-start-line="69" selection-start-column="37" selection-end-line="69" selection-end-column="37" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ObjectDesign/ModelClass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ObjectDesign/ModelPrincipleClass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#10#141#0#PHP" expanded="true" />
+            <element signature="e#6241#6261#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -325,9 +331,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
-          <folding>
-            <element signature="e#681#700#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -335,7 +338,55 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1725">
           <caret line="69" column="37" selection-start-line="69" selection-start-column="37" selection-end-line="69" selection-end-column="37" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SectionTool/ReflectionFunctionClass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4575">
+          <caret line="183" column="66" selection-start-line="183" selection-start-column="66" selection-end-line="183" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SectionTool/ReflectionUsingClass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2900">
+          <caret line="116" column="44" selection-start-line="116" selection-start-column="29" selection-end-line="116" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SectionTool/ReflectionMsgClass.text">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SectionTool/NameSpaceClass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SectionTool/MsgClass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1725">
+          <caret line="69" column="37" selection-start-line="69" selection-start-column="37" selection-end-line="69" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SectionTool/NameSpaceClass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SectionTool/MsgClass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1725">
+          <caret line="69" column="37" selection-start-line="69" selection-start-column="37" selection-end-line="69" selection-end-column="37" />
         </state>
       </provider>
     </entry>
@@ -343,9 +394,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#10#404#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -419,9 +467,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
           <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
-          <folding>
-            <element signature="e#681#700#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -429,7 +474,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1725">
           <caret line="69" column="37" selection-start-line="69" selection-start-column="37" selection-end-line="69" selection-end-column="37" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -437,25 +481,48 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4225">
           <caret line="183" column="66" selection-start-line="183" selection-start-column="66" selection-end-line="183" selection-end-column="66" />
-          <folding>
-            <element signature="e#10#404#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SectionTool/ReflectionUsingClass.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
+        <state relative-caret-position="2900">
           <caret line="116" column="44" selection-start-line="116" selection-start-column="29" selection-end-line="116" selection-end-column="44" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/SectionTool/ReflectionMsgClass.text">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="273" column="5" selection-start-line="273" selection-start-column="5" selection-end-line="273" selection-end-column="5" />
+        <state relative-caret-position="1505">
+          <caret line="273" column="0" selection-start-line="273" selection-start-column="0" selection-end-line="273" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ObjectDesignClass.php" />
+    <entry file="file://$PROJECT_DIR$/ObjectDesign/DesignClass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="521">
+          <caret line="49" column="27" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ObjectDesign/ModelClass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="525">
+          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ObjectDesign/ModelPrincipleClass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="371">
+          <caret line="311" column="29" selection-start-line="311" selection-start-column="29" selection-end-line="311" selection-end-column="29" />
+          <folding>
+            <element signature="e#10#141#0#PHP" expanded="true" />
+            <element signature="e#6241#6261#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f6b5e09-7d19-4464-8cb2-7198b217507a" name="默认的" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FlexibleModel/ComboModelClass.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FlexibleModel/DecorateModelClass.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/FlexibleModel/SurfaceModelClass.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ObjectDesign/CreateObiectClass.php" afterPath="$PROJECT_DIR$/ObjectDesign/CreateObiectClass.php" />
     </list>
     <ignored path="ClassModel.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -25,15 +25,39 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ComboModelClass.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ComboModelClass.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/FlexibleModel/ComboModelClass.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="41">
+            <state relative-caret-position="8050">
               <caret line="340" column="64" selection-start-line="340" selection-start-column="64" selection-end-line="340" selection-end-column="64" />
               <folding>
                 <element signature="e#6#316#0#PHP" expanded="true" />
                 <element signature="e#3303#3327#0#PHP" expanded="true" />
                 <element signature="e#5804#5826#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DecorateModelClass.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/FlexibleModel/DecorateModelClass.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="380">
+              <caret line="202" column="34" selection-start-line="202" selection-start-column="34" selection-end-line="202" selection-end-column="34" />
+              <folding>
+                <element signature="e#6#205#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SurfaceModelClass.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/FlexibleModel/SurfaceModelClass.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="396">
+              <caret line="86" column="55" selection-start-line="86" selection-start-column="55" selection-end-line="86" selection-end-column="55" />
+              <folding>
+                <element signature="e#10#143#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -67,6 +91,8 @@
         <option value="$PROJECT_DIR$/ObjectDesign/ModelPrincipleClass.php" />
         <option value="$PROJECT_DIR$/ObjectDesign/CreateObiectClass.php" />
         <option value="$PROJECT_DIR$/FlexibleModel/ComboModelClass.php" />
+        <option value="$PROJECT_DIR$/FlexibleModel/DecorateModelClass.php" />
+        <option value="$PROJECT_DIR$/FlexibleModel/SurfaceModelClass.php" />
       </list>
     </option>
   </component>
@@ -230,12 +256,14 @@
       <workItem from="1481895967988" duration="9430000" />
       <workItem from="1481965072455" duration="8703000" />
       <workItem from="1482025427360" duration="19669000" />
-      <workItem from="1482154281467" duration="5864000" />
+      <workItem from="1482154281467" duration="8890000" />
+      <workItem from="1482240819532" duration="9234000" />
+      <workItem from="1482327292597" duration="4470000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="149463000" />
+    <option name="totallyTimeSpent" value="166193000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="0" />
@@ -278,20 +306,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ObjectDesign/ModelClass.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ObjectDesign/ModelPrincipleClass.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7775">
-          <caret line="311" column="29" selection-start-line="311" selection-start-column="29" selection-end-line="311" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ObjectDesign/ModelClass.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="525">
@@ -564,12 +578,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/FlexibleModel/ComboModelClass.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
+        <state relative-caret-position="8050">
           <caret line="340" column="64" selection-start-line="340" selection-start-column="64" selection-end-line="340" selection-end-column="64" />
           <folding>
             <element signature="e#6#316#0#PHP" expanded="true" />
             <element signature="e#3303#3327#0#PHP" expanded="true" />
             <element signature="e#5804#5826#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FlexibleModel/DecorateModelClass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="202" column="34" selection-start-line="202" selection-start-column="34" selection-end-line="202" selection-end-column="34" />
+          <folding>
+            <element signature="e#6#205#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/FlexibleModel/SurfaceModelClass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="86" column="55" selection-start-line="86" selection-start-column="55" selection-end-line="86" selection-end-column="55" />
+          <folding>
+            <element signature="e#10#143#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

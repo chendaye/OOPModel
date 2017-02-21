@@ -1,28 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7f6b5e09-7d19-4464-8cb2-7198b217507a" name="默认的" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EnterpriseModel/DatabasesModel/IdentificationObiect/IdentificationObject.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EnterpriseModel/DatabasesModel/IdentificationObiect/fieldsSql.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EnterpriseModel/DatabasesModel/SelectUpdateFactory/SelectFactory.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EnterpriseModel/DatabasesModel/SelectUpdateFactory/UpdateFactory.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EnterpriseModel/PresentationLayer/FrontController/ApplicationHelper_example.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EnterpriseModel/PresentationLayer/FrontController/CommandResolver_example.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EnterpriseModel/PresentationLayer/FrontController/Command_example.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EnterpriseModel/PresentationLayer/FrontController/Controller_example.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EnterpriseModel/PresentationLayer/FrontController/Request_example.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EnterpriseModel/PresentationLayer/bases.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EnterpriseModel/Registry/AbstractRegistryClass.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EnterpriseModel/Registry/ApplicationRegistryClass.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EnterpriseModel/Registry/MemApplicationRegistryClass.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EnterpriseModel/Registry/RegistryClass.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EnterpriseModel/Registry/RequestRegistryClass.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EnterpriseModel/Registry/SessionRegistryClass.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EnterpriseModel/Registry/example/example.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EnterpriseModel/Registry/example/example_002.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/EnterpriseModel/bases.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="7f6b5e09-7d19-4464-8cb2-7198b217507a" name="默认的" comment="" />
     <ignored path="ClassModel.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -41,100 +20,7 @@
     <favorites_list name="ClassModel" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Command_example.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EnterpriseModel/PresentationLayer/FrontController/Command_example.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="10" column="53" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="example_002.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EnterpriseModel/Registry/example/example_002.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="503">
-              <caret line="218" column="23" selection-start-line="218" selection-start-column="23" selection-end-line="218" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="lazyLoad.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EnterpriseModel/DatabasesModel/LazyLoad/lazyLoad.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-794">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="FieldObjFactory.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EnterpriseModel/DatabasesModel/FieldsObjFactory/FieldObjFactory.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="745">
-              <caret line="90" column="67" selection-start-line="90" selection-start-column="67" selection-end-line="90" selection-end-column="67" />
-              <folding>
-                <element signature="e#6#476#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IdentificationObject.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EnterpriseModel/DatabasesModel/IdentificationObiect/IdentificationObject.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="664">
-              <caret line="74" column="33" selection-start-line="74" selection-start-column="33" selection-end-line="74" selection-end-column="33" />
-              <folding>
-                <element signature="e#6#452#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fieldsSql.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EnterpriseModel/DatabasesModel/IdentificationObiect/fieldsSql.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="826">
-              <caret line="150" column="56" selection-start-line="150" selection-start-column="56" selection-end-line="150" selection-end-column="56" />
-              <folding>
-                <element signature="e#6#161#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UpdateFactory.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EnterpriseModel/DatabasesModel/SelectUpdateFactory/UpdateFactory.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="718">
-              <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
-              <folding>
-                <element signature="e#6#436#0#PHP" expanded="true" />
-                <marker date="1486291829098" expanded="true" signature="757:776" ph="UPDATE ${{$t... " />
-                <marker date="1486291829098" expanded="true" signature="1174:1186" ph="INSERT INTO $... " />
-                <marker date="1486291829098" expanded="true" signature="1174:1194" ph="INSERT INTO " />
-                <marker date="1486291829098" expanded="true" signature="1174:1196" ph="INSERT INTO $... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SelectFactory.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/EnterpriseModel/DatabasesModel/SelectUpdateFactory/SelectFactory.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -206,8 +92,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -240,6 +126,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -286,36 +173,13 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="DatabasesModel" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ClassModel" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ClassModel" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EnterpriseModel" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DatabasesModel" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="SelectUpdateFactory" />
+              <option name="myItemId" value="Registry" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -419,21 +283,22 @@
       <workItem from="1484143202445" duration="9080000" />
       <workItem from="1484229036966" duration="8866000" />
       <workItem from="1486259024281" duration="12825000" />
+      <workItem from="1487691256755" duration="37000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="294450000" />
+    <option name="totallyTimeSpent" value="294487000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20260416" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20204978" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329653" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -700,9 +565,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-375">
           <caret line="19" column="31" selection-start-line="19" selection-start-column="31" selection-end-line="19" selection-end-column="31" />
-          <folding>
-            <element signature="e#6#300#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -724,15 +586,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="296">
           <caret line="60" column="57" selection-start-line="60" selection-start-column="57" selection-end-line="60" selection-end-column="57" />
-          <folding>
-            <element signature="e#6#294#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/EnterpriseModel/PresentationLayer/FrontController/Command_example.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
+        <state relative-caret-position="250">
           <caret line="10" column="53" selection-start-line="10" selection-start-column="53" selection-end-line="10" selection-end-column="53" />
           <folding />
         </state>
@@ -740,7 +599,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/EnterpriseModel/DatabasesModel/LazyLoad/lazyLoad.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-794">
+        <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -748,7 +607,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/EnterpriseModel/Registry/example/example_002.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="503">
+        <state relative-caret-position="4925">
           <caret line="218" column="23" selection-start-line="218" selection-start-column="23" selection-end-line="218" selection-end-column="23" />
           <folding />
         </state>
@@ -756,7 +615,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/EnterpriseModel/DatabasesModel/FieldsObjFactory/FieldObjFactory.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="745">
+        <state relative-caret-position="1800">
           <caret line="90" column="67" selection-start-line="90" selection-start-column="67" selection-end-line="90" selection-end-column="67" />
           <folding>
             <element signature="e#6#476#0#PHP" expanded="true" />
@@ -766,7 +625,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/EnterpriseModel/DatabasesModel/IdentificationObiect/IdentificationObject.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="664">
+        <state relative-caret-position="1425">
           <caret line="74" column="33" selection-start-line="74" selection-start-column="33" selection-end-line="74" selection-end-column="33" />
           <folding>
             <element signature="e#6#452#0#PHP" expanded="true" />
@@ -776,7 +635,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/EnterpriseModel/DatabasesModel/IdentificationObiect/fieldsSql.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="826">
+        <state relative-caret-position="3600">
           <caret line="150" column="56" selection-start-line="150" selection-start-column="56" selection-end-line="150" selection-end-column="56" />
           <folding>
             <element signature="e#6#161#0#PHP" expanded="true" />
@@ -786,7 +645,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/EnterpriseModel/DatabasesModel/SelectUpdateFactory/UpdateFactory.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="718">
+        <state relative-caret-position="1650">
           <caret line="83" column="0" selection-start-line="83" selection-start-column="0" selection-end-line="83" selection-end-column="0" />
           <folding>
             <element signature="e#6#436#0#PHP" expanded="true" />
@@ -800,9 +659,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/EnterpriseModel/DatabasesModel/SelectUpdateFactory/SelectFactory.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
+        <state relative-caret-position="150">
           <caret line="6" column="19" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-          <folding />
+          <folding>
+            <marker date="1486307758515" expanded="true" signature="1120:1145" ph="SELECT ${$fi... venue" />
+          </folding>
         </state>
       </provider>
     </entry>

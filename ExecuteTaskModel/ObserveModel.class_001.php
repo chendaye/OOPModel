@@ -124,6 +124,7 @@ namespace ObserveSolution{
         {
             // TODO: 告知观察者发生何事
             foreach ($this->observe as $obs){
+                //todo:执行每一个观察者的 execute 方法
                 $obs->execute($this);    //告知每一个观察者
             }
         }
@@ -215,6 +216,10 @@ namespace ObserveSolution{
     //TODO:处理登录，之后执行notify()方法，通知观察者发生的事情
     $login->handelLogin(1,2,3);
 }
+
+
+
+
 namespace ObserveSolutionTwo{
 
     use ObserveSolution\Login;
@@ -339,7 +344,7 @@ namespace NativeSPL{
      * 又使用组合模式创建了一个灵活，可扩展的模型
      * Login类可以从上下文中提取出来，放入另一个项目中与其他观察者一起工作
      */
-    //TODO:总结：观察者模式也采用组合原则，市值是把 客户端的要求代码 与 核心功能代码  分开
+    //TODO:总结：观察者模式也采用组合原则，是把 客户端的要求代码 与 核心功能代码  分开
     //TODO:每一个客户端要求功能 就是一个观察者，核心代码会持有观察者实例，并且遍历观察者调用观察者的功能实现方法
 }
 ?>

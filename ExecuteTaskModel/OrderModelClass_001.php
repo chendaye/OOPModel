@@ -6,6 +6,68 @@
  * 总的来说：命令模式有助于系统更好的进行组织并已于扩展
  */
 namespace Command{
+
+
+    //TODO:简单的调用者
+    /**
+     * Class Controller
+     * @package Command
+     * 就是一个控制器，不过里面实现的功能，是通过一定分发委托其他类完成
+     */
+    class Controller{
+        private $context;
+
+        /**
+         * 初始化数据中转类
+         * Controller constructor.
+         */
+        public function __construct()
+        {
+            //TODO:设计这些类是为了让分工更明确，降低耦合，提高内聚
+            $this->context = new CommandContext();  //初始化 数据中转类
+        }
+        public function getContext(){
+            return $this->context;
+        }
+
+        /**
+         * 调用命令类处理请求
+         */
+        public function process(){
+            //TODO:用请求参数构造一个  命令类实例
+            $cmd = CommandFactory::getCommand($this->context->get('action'));
+            //TODO:再用命令类的实例  分发处理 请求
+            if(!$cmd->execute($this->context)){
+                //处理失败
+            }else{
+                //处理成功
+            }
+        }
+    }
+    //TODO:使用
+    $controller = new Controller();
+    //伪造用户请求
+    $context = $controller->getContext();
+    $context->addParam('action', 'login');
+    $context->addParam('username', 'daye');
+    $context->addParam('password', '666');
+    //TODO:请求处理
+    $controller->process();
+    /**
+     * process() 方法将 实例化 命令类对象 的工作委托 给 CommandFactory::getCommand() 处理
+     * 然后  在创建的 命令对象实例（LoginCommand）  中 调用 execute()  方法 响应具体的请求
+     * 控制器类  Controller（调用者）  对 LoginCommand（命令对象） 内部实现 一无所知
+     *命令响应的细节是独立的
+     *因此，我们可以随时添加新的 命令者类  来响应不同的请求，并且对当前的结构影响很小
+     */
+    //TODO:这个类 一 类文件  FeedCommand.php 保存 在 目录 commands 下 ；它将被调用来处理 action = feed; 的请求
+    //TODO：这样我们可以随意添加任意数量的 命令类 来响应 任意请求
+    class FeedCommand extends Command {
+        public function execute(CommandContext $context)
+        {
+            // TODO: Implement execute() method.
+        }
+    }
     /**
      * 所有系统都必须决定如何相应用户的请求
      * PHP中决策过程通常可以由分散的各个php页面来处理
@@ -19,7 +81,7 @@ namespace Command{
      * 一个项目需要用户登录  和用户反馈
      * 可以分别创建 login.php  feedback.php 页面来处理 并且实例化专门的类来完成任务
      * 但是，系统中 用户界面 很难被精确定位  一一对应到 任务 系统  也就是，一个页面一般会处理很多功能  而不是单一的功能
-     * 如果页面要处理很多不同的任务，就要考虑封装‘
+     * 如果页面要处理很多不同的任务，就要考虑封装
      * 封装之后，面向系统增加新任务就会变得简单，并且可以将系统中的不同部分分离开来
      * 这时 就是命令模式 登场的时候
      *
@@ -34,6 +96,12 @@ namespace Command{
     abstract class Command{
         abstract public function execute(CommandContext $context);
     }
+
+    /**
+     * 作用就是来调用真正的业务处理逻辑类
+     * Class LoginCommnd
+     * @package Command
+     */
     class LoginCommnd extends Command {
         /**
          * @param CommandContext $context
@@ -46,11 +114,16 @@ namespace Command{
          */
         public function execute(CommandContext $context)
         {
-            // TODO: 工厂方法
+            // TODO: 工厂方法，具体的处理逻辑的类
             $manager = Registry::getAccessManager();
+
+            //todo:从请求中获取信息
             $user = $context->get('username');
             $pass = $context->get('pass');
+            //todo:调用具体的业务逻辑类，来执行具体的登录逻辑
             $user_obj = $manager->login($user, $pass);
+
+
             if(is_null($user_obj)){
                 $context->setError($manager->getError());
                 return false;
@@ -61,6 +134,7 @@ namespace Command{
     }
 
     /**
+     * 存取请求的信息
      * 基本的请求帮助类
      * Class CommandContext
      * @package Command
@@ -143,66 +217,7 @@ namespace Command{
 
         }
     }
-    //TODO:简单的调用者
-    /**
-     * Class Controller
-     * @package Command
-     * 就是一个控制器，不过里面实现的功能，是通过一定分发委托其他类完成
-     */
-    class Controller{
-        private $context;
 
-        /**
-         * 初始化数据中转类
-         * Controller constructor.
-         */
-        public function __construct()
-        {
-            //TODO:设计这些类是为了让分工更明确，降低耦合，提高内聚
-            $this->context = new CommandContext();  //初始化 数据中转类
-        }
-        public function getContext(){
-            return $this->context;
-        }
-
-        /**
-         * 调用命令类处理请求
-         */
-        public function process(){
-            //TODO:用请求参数构造一个  命令类实例
-            $cmd = CommandFactory::getCommand($this->context->get('action'));
-            //TODO:再用命令类的实例  分发处理 请求
-            if(!$cmd->execute($this->context)){
-                //处理失败
-            }else{
-                //处理成功
-            }
-        }
-    }
-    //TODO:使用
-    $controller = new Controller();
-    //伪造用户请求
-    $context = $controller->getContext();
-    $context->addParam('action', 'login');
-    $context->addParam('username', 'daye');
-    $context->addParam('password', '666');
-    //TODO:请求处理
-    $controller->process();
-    /**
-     * process() 方法将 实例化 命令类对象 的工作委托 给 CommandFactory::getCommand() 处理
-     * 然后  在创建的 命令对象实例（LoginCommand）  中 调用 execute()  方法 响应具体的请求
-     * 控制器类  Controller（调用者）  对 LoginCommand（命令对象） 内部实现 一无所知
-     *命令响应的细节是独立的
-     *因此，我们可以随时添加新的 命令者类  来响应不同的请求，并且对当前的结构影响很小
-     */
-    //TODO:这个类 一 类文件  FeedCommand.php 保存 在 目录 commands 下 ；它将被调用来处理 action = feed; 的请求
-    //TODO：这样我们可以随意添加任意数量的 命令类 来响应 任意请求
-    class FeedCommand extends Command {
-        public function execute(CommandContext $context)
-        {
-            // TODO: Implement execute() method.
-        }
-    }
     /**
      * 总结：
      * 命令模式：

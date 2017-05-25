@@ -81,7 +81,7 @@ namespace ObserveSolution{
      * notify()
      * 并强制其使用 Observabel 接口
      */
-    //TODO:观察者支持接口，主体要强制实现
+    //TODO:观察者支持接口，主体要强制实现,事件
     interface Observabel{
         public function attach(Observe $observe);
         public function detach(Observe $observe);
@@ -122,9 +122,9 @@ namespace ObserveSolution{
         }
         public function notify()
         {
-            // TODO: 告知观察者发生何事
+            // TODO: 事件发生时，每一个观察者都要做出反应
             foreach ($this->observe as $obs){
-                $obs->execute($this);    //告知每一个观察者
+                $obs->execute($this);    //每一个观察者都要响应事件
             }
         }
         /**

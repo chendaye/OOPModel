@@ -2,11 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f6b5e09-7d19-4464-8cb2-7198b217507a" name="默认的" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OOPSummary/StructuralTypeDesignModel/AdapterModelClass.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OOPSummary/StructuralTypeDesignModel/AgentModelClass.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OOPSummary/StructuralTypeDesignModel/AppearanceModelClass.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OOPSummary/StructuralTypeDesignModel/BridgeModelClass.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OOPSummary/StructuralTypeDesignModel/CompositeModelClass.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OOPSummary/StructuralTypeDesignModel/DataMapperNodelClass.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OOPSummary/StructuralTypeDesignModel/DecoratorModelClass.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OOPSummary/StructuralTypeDesignModel/DependencyInjectionModelClass.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OOPSummary/StructuralTypeDesignModel/FluentInterfaceModelClass.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OOPSummary/StructuralTypeDesignModel/FlyWeightModelClass.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/OOPSummary/StructuralTypeDesignModel/RegisterModelClass.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ExecuteTaskModel/ObserveModel.class.php" afterPath="$PROJECT_DIR$/ExecuteTaskModel/ObserveModel.class.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ExecuteTaskModel/ObserveModel.class_001.php" afterPath="$PROJECT_DIR$/ExecuteTaskModel/ObserveModel.class_001.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ExecuteTaskModel/OrderModelClass_001.php" afterPath="$PROJECT_DIR$/ExecuteTaskModel/OrderModelClass_001.php" />
     </list>
     <ignored path="ClassModel.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,24 +34,124 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ObserveModel.class.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/ExecuteTaskModel/ObserveModel.class.php">
+      <file leaf-file-name="CompositeModelClass.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OOPSummary/StructuralTypeDesignModel/CompositeModelClass.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="756">
-              <caret line="134" column="11" selection-start-line="134" selection-start-column="11" selection-end-line="134" selection-end-column="11" />
-              <folding />
+            <state relative-caret-position="81">
+              <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+              <folding>
+                <element signature="e#1975#2015#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ObserveModel.class_001.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ExecuteTaskModel/ObserveModel.class_001.php">
+      <file leaf-file-name="DataMapperNodelClass.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OOPSummary/StructuralTypeDesignModel/DataMapperNodelClass.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3402">
-              <caret line="130" column="11" selection-start-line="130" selection-start-column="11" selection-end-line="130" selection-end-column="11" />
+            <state relative-caret-position="54">
+              <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
               <folding>
-                <element signature="e#6#144#0#PHP" expanded="true" />
-                <element signature="e#5921#5947#0#PHP" expanded="true" />
+                <element signature="e#3066#3122#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DecoratorModelClass.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OOPSummary/StructuralTypeDesignModel/DecoratorModelClass.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+              <folding>
+                <element signature="e#1756#1796#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DependencyInjectionModelClass.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OOPSummary/StructuralTypeDesignModel/DependencyInjectionModelClass.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+              <folding>
+                <element signature="e#2265#2337#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AppearanceModelClass.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OOPSummary/StructuralTypeDesignModel/AppearanceModelClass.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="81">
+              <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+              <folding>
+                <element signature="e#1528#1572#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FluentInterfaceModelClass.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OOPSummary/StructuralTypeDesignModel/FluentInterfaceModelClass.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+              <folding>
+                <element signature="e#1287#1337#0#PHP" expanded="true" />
+                <marker date="1495708723026" expanded="true" signature="1019:1045" ph="SELECT %s FR... " />
+                <marker date="1495708723026" expanded="true" signature="1661:1709" ph="SELECT foo, foobar" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FlyWeightModelClass.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OOPSummary/StructuralTypeDesignModel/FlyWeightModelClass.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="54">
+              <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+              <folding>
+                <element signature="e#2025#2082#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AgentModelClass.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OOPSummary/StructuralTypeDesignModel/AgentModelClass.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="826">
+              <caret line="91" column="5" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
+              <folding>
+                <element signature="e#6#115#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RegisterModelClass.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/OOPSummary/StructuralTypeDesignModel/RegisterModelClass.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="610">
+              <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+              <folding>
+                <element signature="e#6#249#0#PHP" expanded="true" />
+                <element signature="e#1632#1680#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BridgeModelClass.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/OOPSummary/StructuralTypeDesignModel/BridgeModelClass.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="81">
+              <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+              <folding>
+                <element signature="e#1366#1421#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -58,22 +165,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/AbstractInterfaceClass.php" />
-        <option value="$PROJECT_DIR$/StaticClass.php" />
-        <option value="$PROJECT_DIR$/ErrorDealClass.php" />
-        <option value="$PROJECT_DIR$/SectionOne/FinalClass.php" />
-        <option value="$PROJECT_DIR$/SectionOne/MagicClass.php" />
-        <option value="$PROJECT_DIR$/SectionOne/DestructClass.php" />
-        <option value="$PROJECT_DIR$/SectionOne/CloneClass.php" />
-        <option value="$PROJECT_DIR$/SectionTool/NameSpaceClass.php" />
-        <option value="$PROJECT_DIR$/SectionTool/MsgClass.php" />
-        <option value="$PROJECT_DIR$/SectionTool/ReflectionFunctionClass.php" />
-        <option value="$PROJECT_DIR$/SectionTool/ReflectionUsingClass.php" />
-        <option value="$PROJECT_DIR$/SectionTool/ReflectionMsgClass.php" />
-        <option value="$PROJECT_DIR$/SectionTool/ReflectionMsgClass.text" />
-        <option value="$PROJECT_DIR$/ObjectDesign/DesignClass.php" />
-        <option value="$PROJECT_DIR$/ObjectDesign/ModelClass.php" />
-        <option value="$PROJECT_DIR$/ObjectDesign/ModelPrincipleClass.php" />
         <option value="$PROJECT_DIR$/ObjectDesign/CreateObiectClass.php" />
         <option value="$PROJECT_DIR$/FlexibleModel/DecorateModelClass.php" />
         <option value="$PROJECT_DIR$/FlexibleModel/SurfaceModelClass.php" />
@@ -109,6 +200,22 @@
         <option value="$PROJECT_DIR$/EnterpriseModel/DatabasesModel/SelectUpdateFactory/SelectFactory.php" />
         <option value="$PROJECT_DIR$/ExecuteTaskModel/OrderModelClass_001.php" />
         <option value="$PROJECT_DIR$/ExecuteTaskModel/ObserveModel.class_001.php" />
+        <option value="$PROJECT_DIR$/FlexibleModel/AdapterModelClass.php" />
+        <option value="$PROJECT_DIR$/OOPSummary/BridgingModelClass.php" />
+        <option value="$PROJECT_DIR$/OOPSummary/AdapterModelClass.php" />
+        <option value="$PROJECT_DIR$/OOPSummary/CombinationModelClass.php" />
+        <option value="$PROJECT_DIR$/OOPSummary/CompositeModelClass.php" />
+        <option value="$PROJECT_DIR$/OOPSummary/StructuralTypeDesignModel/AppearanceModelClass.php" />
+        <option value="$PROJECT_DIR$/OOPSummary/StructuralTypeDesignModel/AdapterModelClass.php" />
+        <option value="$PROJECT_DIR$/OOPSummary/StructuralTypeDesignModel/CompositeModelClass.php" />
+        <option value="$PROJECT_DIR$/OOPSummary/StructuralTypeDesignModel/BridgeModelClass.php" />
+        <option value="$PROJECT_DIR$/OOPSummary/StructuralTypeDesignModel/DataMapperNodelClass.php" />
+        <option value="$PROJECT_DIR$/OOPSummary/StructuralTypeDesignModel/DecoratorModelClass.php" />
+        <option value="$PROJECT_DIR$/OOPSummary/StructuralTypeDesignModel/DependencyInjectionModelClass.php" />
+        <option value="$PROJECT_DIR$/OOPSummary/StructuralTypeDesignModel/FluentInterfaceModelClass.php" />
+        <option value="$PROJECT_DIR$/OOPSummary/StructuralTypeDesignModel/FlyWeightModelClass.php" />
+        <option value="$PROJECT_DIR$/OOPSummary/StructuralTypeDesignModel/AgentModelClass.php" />
+        <option value="$PROJECT_DIR$/OOPSummary/StructuralTypeDesignModel/RegisterModelClass.php" />
       </list>
     </option>
   </component>
@@ -185,7 +292,25 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="FlexibleModel" />
+              <option name="myItemId" value="OOPSummary" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="StructuralTypeDesignModel" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OOPModel" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OOPModel" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="OOPSummary" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -202,6 +327,8 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\Chen\WWW\OOPModel\OOPSummary\StructuralTypeDesignModel" />
+      <recent name="F:\Chen\WWW\OOPModel\OOPSummary" />
       <recent name="E:\Phpstudy\WWW\ClassModel\EnterpriseModel\PresentationLayer" />
       <recent name="E:\Phpstudy\WWW\ClassModel\EnterpriseModel\PresentationLayer\example" />
     </key>
@@ -300,12 +427,12 @@
       <workItem from="1488854301252" duration="5029000" />
       <workItem from="1488937497435" duration="599000" />
       <workItem from="1489026252022" duration="660000" />
-      <workItem from="1495686525137" duration="296000" />
+      <workItem from="1495686525137" duration="4638000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="307971000" />
+    <option name="totallyTimeSpent" value="312313000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -349,77 +476,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/SectionBasic/DestructClass.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="18" column="2" selection-start-line="18" selection-start-column="2" selection-end-line="18" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SectionTool/NameSpaceClass.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ObjectDesignClass.php" />
-    <entry file="file://$PROJECT_DIR$/ObjectDesign/DesignClass.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="521">
-          <caret line="49" column="27" selection-start-line="49" selection-start-column="27" selection-end-line="49" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ObjectDesign/ModelClass.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ObjectDesign/ModelPrincipleClass.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7525">
-          <caret line="311" column="29" selection-start-line="311" selection-start-column="29" selection-end-line="311" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SectionTool/ReflectionMsgClass.text">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="555">
-          <caret line="273" column="0" selection-start-line="273" selection-start-column="0" selection-end-line="273" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ObjectDesign/CreateObiectClass.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="812" column="37" selection-start-line="812" selection-start-column="37" selection-end-line="812" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SectionTool/MsgClass.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="750">
-          <caret line="30" column="19" selection-start-line="30" selection-start-column="7" selection-end-line="30" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FlexibleModel/DecorateModelClass.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4825">
-          <caret line="202" column="34" selection-start-line="202" selection-start-column="34" selection-end-line="202" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/FlexibleModel/SurfaceModelClass.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2025">
-          <caret line="86" column="55" selection-start-line="86" selection-start-column="55" selection-end-line="86" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ExecuteTaskModel/StrategyModelClass.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="296">
@@ -684,17 +740,130 @@
         <state relative-caret-position="3402">
           <caret line="130" column="11" selection-start-line="130" selection-start-column="11" selection-end-line="130" selection-end-column="11" />
           <folding>
-            <element signature="e#6#144#0#PHP" expanded="true" />
-            <element signature="e#5921#5947#0#PHP" expanded="true" />
+            <element signature="e#6#144#0#PHP" expanded="false" />
+            <element signature="e#5921#5947#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ExecuteTaskModel/ObserveModel.class.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="756">
-          <caret line="134" column="11" selection-start-line="134" selection-start-column="11" selection-end-line="134" selection-end-column="11" />
+        <state relative-caret-position="3186">
+          <caret line="122" column="32" selection-start-line="122" selection-start-column="32" selection-end-line="122" selection-end-column="32" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OOPSummary/StructuralTypeDesignModel/AdapterModelClass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+          <folding>
+            <element signature="e#3325#3368#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OOPSummary/StructuralTypeDesignModel/AppearanceModelClass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+          <folding>
+            <element signature="e#1528#1572#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OOPSummary/StructuralTypeDesignModel/BridgeModelClass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+          <folding>
+            <element signature="e#1366#1421#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OOPSummary/StructuralTypeDesignModel/CompositeModelClass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="2" />
+          <folding>
+            <element signature="e#1975#2015#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OOPSummary/StructuralTypeDesignModel/DataMapperNodelClass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+          <folding>
+            <element signature="e#3066#3122#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OOPSummary/StructuralTypeDesignModel/DecoratorModelClass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+          <folding>
+            <element signature="e#1756#1796#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OOPSummary/StructuralTypeDesignModel/DependencyInjectionModelClass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+          <folding>
+            <element signature="e#2265#2337#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OOPSummary/StructuralTypeDesignModel/FluentInterfaceModelClass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="9" selection-start-line="2" selection-start-column="9" selection-end-line="2" selection-end-column="9" />
+          <folding>
+            <element signature="e#1287#1337#0#PHP" expanded="true" />
+            <marker date="1495708723026" expanded="true" signature="1019:1045" ph="SELECT %s FR... " />
+            <marker date="1495708723026" expanded="true" signature="1661:1709" ph="SELECT foo, foobar" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OOPSummary/StructuralTypeDesignModel/FlyWeightModelClass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="e#2025#2082#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OOPSummary/StructuralTypeDesignModel/AgentModelClass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="826">
+          <caret line="91" column="5" selection-start-line="91" selection-start-column="5" selection-end-line="91" selection-end-column="5" />
+          <folding>
+            <element signature="e#6#115#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/OOPSummary/StructuralTypeDesignModel/RegisterModelClass.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="610">
+          <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+          <folding>
+            <element signature="e#6#249#0#PHP" expanded="true" />
+            <element signature="e#1632#1680#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

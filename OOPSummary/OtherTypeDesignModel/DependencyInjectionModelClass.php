@@ -1,6 +1,6 @@
 <?php
 /**
- * 依赖注入和控制反转（同义词）
+ * 依赖注入和控制反转（同义词）  代码内部创建依赖关系，而是让其作为一个参数传递
  * 科普：
  * 首先依赖注入和控制反转说的是同一个东西，是一种设计模式，这种设计模式用来减少程序间的耦合，
  * 首先先别追究这个设计模式的定义，否则你一定会被说的云里雾里
@@ -68,7 +68,7 @@ namespace example_three{
         function getList(){
             $this->_db->query("......");//这里具体sql语句就省略不写了
         }
-        //从外部注入db连接
+        //从外部注入db连接 从外部注入
         function setDb($connection){
             $this->_db = $connection;
         }
@@ -77,7 +77,7 @@ namespace example_three{
     /**
      * 这样一来，example类完全与外部类解除耦合了，你可以看到Db类里面已经没有工厂方法或Db类的身影了。
      * 我们通过从外部调用example类的setDb方法，将连接实例直接注入进去。这样example完全不用关心db连接怎么生成的了。
-     * 这就叫依赖注入，实现不是在代码内部创建依赖关系，而是让其作为一个参数传递，
+     * 这就叫依赖注入，实现不是在     代码内部创建依赖关系，而是让其作为一个参数传递，
      * 这使得我们的程序更容易维护，降低程序代码的耦合度，实现一种松耦合。
      */
     //调用
@@ -92,7 +92,9 @@ namespace example_three{
 
     //我们没完没了的写这么多set？累不累? ok，为了不用每次写这么多行代码，我们又去弄了一个工厂方法：
     class Factory {
+        //直接返回一个注入好的  example  实例
         public static function getExample(){
+            //在工厂方法里完成类的依赖注入  注入的时候也用到工厂方法
             $example = new example();
             $example->setDb(Factory::getDb());//注入db连接
             $example->setFile(Factory::getFile());//注入文件处理类
@@ -118,6 +120,7 @@ namespace example_four{
      */
     class example {
         private $_di;
+        //引用一个 Di 的实例
         function __construct(Di &$di){
             $this->_di = $di;
         }
@@ -126,10 +129,22 @@ namespace example_four{
             $this->_di->get('db')->query("......");//这里具体sql语句就省略不写了
         }
     }
+
+    class Di{
+        public function set($name, $closure)
+        {
+            if($closure instanceof \Closure){
+                call_user_func_array($closure, []);
+                call_user_func($closure);
+            }
+        }
+    }
     $di = new Di();
     $di->set("db",function(){
         return new Db("localhost","root","root","test");
     });
+
+    //给构造方法传入容器实例
     $example = new example($di);
     $example->getList();
 
@@ -137,10 +152,49 @@ namespace example_four{
      * Di就是IoC容器，所谓容器就是存放我们可能会用到的各种类的实例，
      * 我们通过$di->set()设置一个名为db的实例，因为是通过回调函数的方式传入的，所以set的时候并不会立即实例化db类，
      * 而是当$di->get('db')的时候才会实例化，同样，在设计di类的时候还可以融入单例模式。
-     * 这样我们只要在全局范围内申明一个Di类，将所有需要注入的类放到容器里，
+     *
+     * 这样我们只要在            全局范围内申明一个Di类，将所有需要注入的类放到容器里，
+     *
      * 然后将容器作为构造函数的参数传入到example，即可在example类里面从容器中获取实例。当然也不一定是构造函数，
      * 你也可以用一个 setDi(Di $di)的方法来传入Di容器，总之约定是你制定的，你自己清楚就行。
      * 这样一来依赖注入以及关键的容器概念已经介绍完毕，剩下的就是在实际中使用并理解它吧！
+     */
+}
+
+//http://www.cnblogs.com/liuhaorain/p/3747470.html
+namespace {
+    /**
+     * 深入理解DIP、IoC、DI以及IoC容器
+     *
+     * 面向对象设计（OOD）有助于我们开发出高性能、易扩展以及易复用的程序。其中，OOD有一个重要的思想那就是依赖倒置原则（DIP），
+     * 并由此引申出IoC、DI以及Ioc容器等概念。通过本文我们将一起学习这些概念，并理清他们之间微妙的关系。
+     *
+     * 总结
+     * 在本文中，我试图以最通俗的方式讲解，希望能帮助大家理解这些概念。下面我们一起来总结一下：
+     *
+     * DIP是软件设计的一种思想，IoC则是基于DIP衍生出的一种软件设计模式。
+     *
+     * DI是IoC的具体实现方式之一，使用最为广泛。
+     *
+     * IoC容器是DI构造函注入的框架，它管理着依赖项的生命周期以及映射关系。
+     *
+     * IoC -> DIP  -> DI
+     */
+
+    //todo:依赖倒置原则（DIP）
+    /**
+     * 依赖倒置原则，它转换了依赖，
+     * 上层模块不依赖于底层模块的实现，而底层模块依赖于上层模块定义的接口。
+     * 通俗的讲，就是上层模块定义接口，底层模块负责实现。
+     *
+     * Bob Martins对DIP的定义：
+     * 上层模块不应依赖于底层模块，两者应该依赖于抽象。
+     * 抽象不不应该依赖于实现，实现应该依赖于抽象。
+     *
+     * DIP的优点：
+     * 系统更柔韧：可以修改一部分代码而不影响其他模块。
+     * 系统更健壮：可以修改一部分代码而不会让系统崩溃。
+     * 系统更高效：组件松耦合，且可复用，提高开发效率。
      */
 }
 ?>

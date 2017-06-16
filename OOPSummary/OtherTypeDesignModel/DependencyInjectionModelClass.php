@@ -131,15 +131,33 @@ namespace example_four{
     }
 
     class Di{
+        private $di;
+        private static $instance;
+        private function __construct()
+        {
+            //单例
+        }
+
+        static public function instance()
+        {
+            if(empty(self::$instance))self::$instance = new self();
+            return self::$instance;
+        }
+
         public function set($name, $closure)
         {
             if($closure instanceof \Closure){
-                call_user_func_array($closure, []);
-                call_user_func($closure);
+                //call_user_func_array($closure, []);
+                $this->$name = call_user_func($closure);
             }
         }
+
+        public function get($instance)
+        {
+            return $this->$instance;
+        }
     }
-    $di = new Di();
+    $di = Di::instance();
     $di->set("db",function(){
         return new Db("localhost","root","root","test");
     });
@@ -195,6 +213,173 @@ namespace {
      * 系统更柔韧：可以修改一部分代码而不影响其他模块。
      * 系统更健壮：可以修改一部分代码而不会让系统崩溃。
      * 系统更高效：组件松耦合，且可复用，提高开发效率。
+     */
+
+    /**
+     * 控制反转（IoC）
+     * DIP是一种 软件设计原则，它仅仅告诉你两个模块之间应该如何依赖，但是它并没有告诉如何做。
+     * IoC则是一种 软件设计模式，它告诉你应该如何做，来解除相互依赖模块的耦合。
+     * 控制反转（IoC），它为相互依赖的组件提供抽象，
+     * 将依赖（低层模块）对象的获得交给第三方（系统）来控制，
+     * 即依赖对象不在被依赖模块的类中直接通过new来获取。
+     * 在图1的例子我们可以看到，ATM它自身并没有插入具体的银行卡（工行卡、农行卡等等），
+     * 而是将插卡工作交给人来控制，即我们来决定将插入什么样的银行卡来取钱。
+     * 同样我们也通过软件开发过程中场景来加深理解。
+     */
+
+    //TODO：场景
+    /**
+     * 做过电商网站的朋友都会面临这样一个问题：
+     * 订单入库。假设系统设计初期，用的是SQL Server数据库。通常我们会定义一个SqlServerDal类，用于数据库的读写
+     */
+
+    class SqlServerDal
+    {
+        public function Add()
+        {
+            //todo:添加一条数据
+        }
+    }
+
+    /**
+     * 然后我们定义一个Order类，负责订单的逻辑处理。
+     * 由于订单要入库，需要依赖于数据库的操作。
+     * 因此在Order类中，我们需要定义SqlServerDal类的变量并初始化。
+     */
+     class Order
+    {
+        private $dal;
+
+        public function __call($name, $arguments)
+        {
+            // TODO: Implement __call() method.
+            $this->dal = new SqlServerDal();//添加一个私有变量保存数据库操作的对象
+        }
+
+         public function Add()
+        {
+            $this->dal->Add();
+        }
+    }
+
+
+    /**
+     * 依赖注入（DI）
+     * 控制反转（IoC）一种重要的方式，就是将依赖对象的创建和绑定转移到被依赖对象类的外部来实现。
+     * 在上述的实例中，Order类所依赖的对象SqlServerDal的创建和绑定是在Order类内部进行的。
+     * 事实证明，这种方法并不可取。
+     * 既然，不能在Order类内部直接绑定依赖关系，那么如何将SqlServerDal对象的引用传递给Order类使用呢？
+     *
+     * 依赖注入（DI），它提供一种机制，将需要依赖（低层模块）对象的引用传递给被依赖（高层模块）对象。
+     * 通过DI，我们可以在Order类的外部将SqlServerDal对象的引用传递给Order类对象。那么具体是如何实现呢？
+     */
+
+    //todo:方法一 构造函数注入
+    /**
+     * 构造函数函数注入，毫无疑问通过构造函数传递依赖。
+     * 因此，构造函数的参数必然用来接收一个依赖对象。那么参数的类型是什么呢？
+     * 具体依赖对象的类型？还是一个抽象类型？根据DIP原则，我们知道高层模块不应该依赖于低层模块，两者应该依赖于抽象。
+     * 那么构造函数的参数应该是一个抽象类型。
+     * 我们再回到上面那个问题，如何将SqlServerDal对象的引用传递给Order类使用呢？
+     *
+     * 从上面我们可以看出，我们将依赖对象SqlServerDal对象的创建和绑定转移到Order类外部来实现，
+     * 这样就解除了SqlServerDal和Order类的耦合关系。当我们数据库换成Access数据库时，
+     * 只需定义一个AccessDal类，然后外部重新绑定依赖，不需要修改Order类内部代码，则可实现Access数据库的操作。
+     */
+    //首选，我们需要定义SqlServerDal的抽象类型IDataAccess，并在IDataAccess接口中声明一个Add方法
+     interface IDataAccess
+    {
+        public function Add();
+    }
+    //然后在SqlServerDal类中，实现IDataAccess接口。
+     class SqlServerDal_ implements IDataAccess
+     {
+        public function Add()
+        {
+            //todo:添加数据
+        }
+    }
+    //接下来，我们还需要修改Order类。
+    class Order_
+    {
+        private  $_ida;//定义一个私有变量保存抽象
+
+            //构造函数注入
+        public function __construct(IDataAccess $ida)
+        {
+            $this->_ida = $ida;//传递依赖
+        }
+
+        public function Add()
+        {
+            $this->_ida->Add();
+        }
+    }
+
+    //todo:方法二 属性注入
+    //顾名思义，属性注入是通过属性来传递依赖。因此，我们首先需要在依赖类Order中定义一个属性：
+    class Order__
+    {
+        private $_ida;  //定义一个私有变量保存抽象
+
+        //给属性赋值
+        public function set(IDataAccess $_ida)
+        {
+            $this->_ida = $_ida;
+            return $this->_ida;
+        }
+
+        public function Add()
+        {
+            $this->_ida->Add();
+        }
+    }
+
+    //使用
+    $use = new Order__();
+    //注入依赖
+    $use->set(new \SqlServerDal_());
+    $use->Add();
+
+    //todo:方法三 接口注入
+    //相比构造函数注入和属性注入，接口注入显得有些复杂，使用也不常见。具体思路是先定义一个接口，包含一个设置依赖的方法。然后依赖类，继承并实现这个接口。
+    interface IDependent
+    {
+        public function SetDependence(IDataAccess $_ida);
+    }
+
+    class Order_3 implements IDependent
+    {
+        private  $_ida;//定义一个私有变量保存抽象
+
+        public function SetDependence(IDataAccess $_ida)
+        {
+            // TODO: Implement SetDependence() method.
+            $this->_ida = $_ida;
+        }
+
+        public function Add()
+        {
+            $this->_ida->Add();
+        }
+    }
+
+    //使用
+    $use = new Order_3();
+    $use->SetDependence(new \SqlServerDal_());
+    $use->Add();
+
+
+
+    //todo:IoC容器
+    //前面所有的例子中，我们都是通过手动的方式来创建依赖对象，并将引用传递给被依赖模块。比如：
+
+    /**
+     * 对于大型项目来说，相互依赖的组件比较多。如果还用手动的方式，自己来创建和注入依赖的话，显然效率很低，而且往往还会出现不可控的场面。正因如此，IoC容器诞生了。
+     * IoC容器实际上是一个DI框架，它能简化我们的工作量。它包含以下几个功能：
+     * 动态创建、注入依赖对象。
+     * 管理对象生命周期。
+     * 映射依赖关系。
      */
 }
 ?>

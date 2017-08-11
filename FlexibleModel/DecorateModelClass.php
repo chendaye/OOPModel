@@ -66,6 +66,12 @@ namespace DecorateSolution{
     abstract class Tile{
         abstract public function wealth();
     }
+
+    /**
+     * 基础自抽象父类
+     * Class Plain
+     * @package DecorateSolution
+     */
     class Plain extends Tile{
         private $wealth = 6;
         public function wealth()
@@ -82,7 +88,7 @@ namespace DecorateSolution{
      * Class TileDecorator
      * @package DecorateSolution
      */
-    //TODO:装饰器抽象接口，持有一个Tile对象， 用来委托
+    //TODO:装饰器抽象接口，持有一个特定的  Tile对象（实现Tile接口的子类实例）， 用来委托  本身是  Tile 类  同时持有 Tile 类实例
     abstract class TileDecorator extends Tile {
         protected $tile;
         public function __construct(Tile $title)

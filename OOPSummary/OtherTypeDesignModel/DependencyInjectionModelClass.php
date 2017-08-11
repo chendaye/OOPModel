@@ -1,4 +1,5 @@
 <?php
+
 /**
  * 依赖注入和控制反转（同义词）  代码内部创建依赖关系，而是让其作为一个参数传递
  * 科普：
@@ -131,15 +132,33 @@ namespace example_four{
     }
 
     class Di{
+        private $di;
+        private static $instance;
+        private function __construct()
+        {
+            //单例
+        }
+
+        static public function instance()
+        {
+            if(empty(self::$instance))self::$instance = new self();
+            return self::$instance;
+        }
+
         public function set($name, $closure)
         {
             if($closure instanceof \Closure){
-                call_user_func_array($closure, []);
-                call_user_func($closure);
+                //call_user_func_array($closure, []);
+                $this->$name = call_user_func($closure);
             }
         }
+
+        public function get($instance)
+        {
+            return $this->$instance;
+        }
     }
-    $di = new Di();
+    $di = Di::instance();
     $di->set("db",function(){
         return new Db("localhost","root","root","test");
     });
@@ -299,5 +318,69 @@ namespace {
     }
 
     //todo:方法二 属性注入
+    //顾名思义，属性注入是通过属性来传递依赖。因此，我们首先需要在依赖类Order中定义一个属性：
+    class Order__
+    {
+        private $_ida;  //定义一个私有变量保存抽象
+
+        //给属性赋值
+        public function set(IDataAccess $_ida)
+        {
+            $this->_ida = $_ida;
+            return $this->_ida;
+        }
+
+        public function Add()
+        {
+            $this->_ida->Add();
+        }
+    }
+
+    //使用
+    $use = new Order__();
+    //注入依赖
+    $use->set(new \SqlServerDal_());
+    $use->Add();
+
+    //todo:方法三 接口注入
+    //相比构造函数注入和属性注入，接口注入显得有些复杂，使用也不常见。具体思路是先定义一个接口，包含一个设置依赖的方法。然后依赖类，继承并实现这个接口。
+    interface IDependent
+    {
+        public function SetDependence(IDataAccess $_ida);
+    }
+
+    class Order_3 implements IDependent
+    {
+        private  $_ida;//定义一个私有变量保存抽象
+
+        public function SetDependence(IDataAccess $_ida)
+        {
+            // TODO: Implement SetDependence() method.
+            $this->_ida = $_ida;
+        }
+
+        public function Add()
+        {
+            $this->_ida->Add();
+        }
+    }
+
+    //使用
+    $use = new Order_3();
+    $use->SetDependence(new \SqlServerDal_());
+    $use->Add();
+
+
+
+    //todo:IoC容器
+    //前面所有的例子中，我们都是通过手动的方式来创建依赖对象，并将引用传递给被依赖模块。比如：
+
+    /**
+     * 对于大型项目来说，相互依赖的组件比较多。如果还用手动的方式，自己来创建和注入依赖的话，显然效率很低，而且往往还会出现不可控的场面。正因如此，IoC容器诞生了。
+     * IoC容器实际上是一个DI框架，它能简化我们的工作量。它包含以下几个功能：
+     * 动态创建、注入依赖对象。
+     * 管理对象生命周期。
+     * 映射依赖关系。
+     */
 }
 ?>

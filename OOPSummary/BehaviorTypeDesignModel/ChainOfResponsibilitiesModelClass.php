@@ -7,7 +7,8 @@
  * 日志框架，其中每个链元素自主决定如何处理日志消息
  * 一个垃圾邮件过滤器
  * 缓存：第一个对象是一个memcached接口的一个实例，如果“思念”，它代表调用数据库接口
- * Yii框架：cfilterchain是一连串的动作控制器过滤器。执行点是从一个过滤器传递到另一个沿链，只有当所有的过滤器说“是”，行动可以调用最后。
+ * Yii框架：cfilterchain是一连串的动作控制器过滤器。执行点是从一个过滤器传递到另一个沿链，只有当所有的过滤器说“是”，
+ * 行动可以调用最后。
  */
 
 namespace DesignPatterns\Behavioral\ChainOfResponsibilities{

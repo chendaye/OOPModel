@@ -16,7 +16,28 @@
           </mappings>
         </serverdata>
       </paths>
-      <paths name="Abel (2)">
+      <paths name="L">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="Laravel">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="Link">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="dragon">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />

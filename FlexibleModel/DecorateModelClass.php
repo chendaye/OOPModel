@@ -88,7 +88,8 @@ namespace DecorateSolution{
      * Class TileDecorator
      * @package DecorateSolution
      */
-    //TODO:装饰器抽象接口，持有一个特定的  Tile对象（实现Tile接口的子类实例）， 用来委托  本身是  Tile 类  同时持有 Tile 类实例
+    //TODO:装饰器抽象接口，持有一个特定的  Tile对象（实现Tile接口的子类实例），
+    // 用来委托  本身是  Tile 类  同时持有 Tile 类实例
     abstract class TileDecorator extends Tile {
         protected $tile;
         public function __construct(Tile $title)
@@ -135,7 +136,8 @@ namespace DecorateSolution{
      * 通过大量使用装饰器。可以在运行时拥有很大的灵活性
      *
      * 和之前的组合模式有一点很相似，也是极其重要的
-     * 就是在 父抽象 接口之后 再建 一个 抽象级 并且定义新的抽象方法以实现父类基础上另外的功能，然后子类可以在此基础上扩展
+     * 就是在 父抽象 接口之后 再建 一个 抽象级 并且定义新的抽象方法以实现父类基础上另外的功能，
+     * 然后子类可以在此基础上扩展
      * 加了一级抽象接口之后，所有子类仍然继承自 一级父类，实现一级父类的所有定义功能，本质上仍然是同类型的对象
      * 但另一方面，扩展自二级抽象接口的子类，有会支持新的功能
      */
